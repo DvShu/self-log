@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# 开发者工具的文件
+.idea
+yarn-error.log
