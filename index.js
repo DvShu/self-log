@@ -55,7 +55,7 @@ class SelfLog {
    * @param category log4js category
    * @return {Logger}
    */
-  getLogger (category) {
+  static getLogger (category) {
     return log4js.getLogger(category);
   }
 }

@@ -15,7 +15,8 @@ yarn add self-log
 #### 1. self-log
 Use self-log logs.
 ```Javascipt
-const selfLog = new (require('self-log'))(filename);
+const SelfLog = require('self-log');
+const selfLog = new SelfLog(filename);
 
 # use self-log default category 'app'
 selfLog.debug('debug')
@@ -24,7 +25,7 @@ selfLog.warn('warn')
 selfLog.error('error')
 
 # getLogger
-const logger = selfLog.getLogger('test');
+const logger = SelfLog.getLogger('test');
 
 logger.debug();
 ```
